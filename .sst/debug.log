@@ -1,0 +1,10 @@
+2023-10-05T15:47:49.789Z  +4767ms [debug] Config loaded {"version":"2.26.11","cdkVersion":"2.95.1","constructsVersion":"10.2.69","config":{"name":"squash","region":"us-east-1","stage":"robertmarincu","ssmPrefix":"/sst/squash/robertmarincu/"},"metafile":{"inputs":{"sst.config.ts":{"bytes":210,"imports":[{"path":"sst","kind":"import-statement","external":true},{"path":"sst/constructs","kind":"import-statement","external":true}],"format":"esm"}},"outputs":{".sst.config.1696520865030.mjs":{"imports":[],"exports":["default"],"entryPoint":"sst.config.ts","inputs":{"sst.config.ts":{"bytesInOutput":121}},"bytes":303}}},"paths":{"config":"/Users/robertmarincu/Code/squash/sst.config.ts","root":"/Users/robertmarincu/Code/squash","out":"/Users/robertmarincu/Code/squash/.sst","artifacts":"/Users/robertmarincu/Code/squash/.sst/artifacts"}}
+2023-10-05T15:47:50.062Z   +273ms [debug] dev is ready
+2023-10-05T15:47:50.143Z    +81ms [debug] Using AWS profile 
+2023-10-05T15:47:50.313Z   +170ms [debug] Created AWS client RDSDataClient
+2023-10-05T15:47:50.834Z   +521ms [debug] Created AWS client IoTClient
+2023-10-05T15:47:50.834Z     +0ms [debug] Getting IoT endpoint
+2023-10-05T15:47:51.021Z   +187ms [debug] [kysely-codegen] Loaded kyseley type generator
+2023-10-05T15:47:51.112Z    +91ms [debug] Synthesizing stacks...
+2023-10-05T15:47:51.117Z     +5ms [debug] Created AWS client STSClient
+2023-10-05T15:47:51.894Z   +777ms [debug] {"name":"ExpiredTokenException","$fault":"client","$metadata":{"httpStatusCode":403,"requestId":"596a2cff-b002-4550-80b9-bfdc159d2eb1","attempts":1,"totalRetryDelay":0},"message":"The security token included in the request is expired"}
