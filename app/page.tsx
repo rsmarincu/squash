@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-import { useState } from "react";
+import { SyntheticEvent, useState } from "react";
 import { Dialog } from "@headlessui/react";
 
 const membru = ["M", "E", "M", "B", "R", "U"];
 
-async function register(name, email, phone) {
+async function register(name: string, email: string, phone: string) {
   await fetch("/api", {
     method: "POST",
     body: JSON.stringify({
@@ -26,14 +26,16 @@ export default function Home() {
     phone: "",
   });
 
-  const handleChange = (event) => {
+  const handleChange = (event: SyntheticEvent) => {
     setForm({
       ...form,
-      [event.target.id]: event.target.value,
+      [(event.target as HTMLInputElement).id]: (
+        event.target as HTMLInputElement
+      ).value,
     });
   };
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: SyntheticEvent) => {
     event.preventDefault();
     await register(form.name, form.email, form.phone);
     setIsOpen(false);

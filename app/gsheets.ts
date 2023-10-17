@@ -21,7 +21,7 @@ export async function register(name: string, email: string, phone: string) {
 
   const sheets = google.sheets({ version: "v4", auth });
 
-  const data = await sheets.spreadsheets.values.append({
+  await sheets.spreadsheets.values.append({
     spreadsheetId: Config.SHEET_ID,
     range: 'Sheet1!A2:D',
     valueInputOption: 'USER_ENTERED',
@@ -30,5 +30,5 @@ export async function register(name: string, email: string, phone: string) {
     },
   });
 
-  return data.data.values;
+  return
 }
