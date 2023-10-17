@@ -8,11 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily:{
+        inter: ['var(--font-inter)'],
       },
+      backgroundImage: {
+        'player': "url('/public/player.png')",
+      },
+      colors: {
+        'squash-red':'#B10511',
+        'squash-dark':'#1E1E1E',
+        'squash-light': '#929292'
+      },
+      rotate: {
+        '15':'15deg'
+      }
     },
   },
   plugins: [],
