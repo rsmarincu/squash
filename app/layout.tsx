@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Squash Kings Sibiu",
+  title: "Ballers.",
   description: "Cea mai noua sala de squash din Sibiu",
   icons: {
     icon: {
