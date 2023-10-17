@@ -11,6 +11,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Squash Kings Sibiu",
   description: "Cea mai noua sala de squash din Sibiu",
+  icons: {
+    icon: {
+      url: "/favicon.png",
+      type: "image/png",
+    },
+  },
 };
 
 export default function RootLayout({

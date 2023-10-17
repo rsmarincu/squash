@@ -43,7 +43,7 @@ export default function Home() {
 
   return (
     <main className="flex w-full min-h-screen flex-col  overflow-hidden">
-      <div className="ml-8 lg:ml-32 flex grow">
+      <div className="mx-4 sm:mr-0 sm:ml-8 lg:ml-32 flex grow">
         <div className="absolute w-full h-full z-0 -left-[50%]  mix-blend-overlay">
           <Image
             src={"/blur.png"}
@@ -77,21 +77,23 @@ export default function Home() {
               <p className="font-light text-white text-2xl z-10 pt-10">
                 Cea mai noua sala de squash din Sibiu.
               </p>
-              <div className="flex flex-col xl:flex-row w-full mt-20">
-                <div className="relative w-80 h-52 border border-white/30 rounded-2xl bg-white/30 z-10 backdrop-blur-sm overflow-hidden ">
-                  <div className="flex flex-col p-2 px-4 h-full opacity-60 ">
-                    <p className="text-white text-lg font-light grow">
-                      Certified baller.
-                    </p>
-                    <div className="flex ">
-                      {membru.map((letter, index) => (
-                        <p
-                          key={index}
-                          className="text-white flex justify-center text-4xl font-light w-full "
-                        >
-                          {letter}
-                        </p>
-                      ))}
+              <div className="flex flex-col xl:flex-row w-full mt-12">
+                <div className="flex justify-center md:justify-start w-full sm:w-fit">
+                  <div className="relative h-44 max-w-xs w-full sm:w-80 sm:h-52 border border-white/30 rounded-2xl bg-white/30 z-10 backdrop-blur-sm overflow-hidden ">
+                    <div className="flex flex-col p-2 px-4 h-full opacity-60 ">
+                      <p className="text-white text-lg font-light grow">
+                        Certified baller.
+                      </p>
+                      <div className="flex ">
+                        {membru.map((letter, index) => (
+                          <p
+                            key={index}
+                            className="text-white flex justify-center text-4xl font-light w-full "
+                          >
+                            {letter}
+                          </p>
+                        ))}
+                      </div>
                     </div>
                     <div className="absolute rounded-full w-16 h-16  -bottom-5 -right-10 border-red border-4 mix-blend-overlay"></div>
                     <div className="absolute rounded-full w-52 h-52  -bottom-20 -left-10 border-white border-4">
@@ -99,7 +101,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex xl:ml-6 mt-24 mb-4 xl:mt-0 flex-col text-white font-light text-base">
+                <div className="flex xl:ml-6 mt-12 mb-4 xl:mt-0 flex-col text-white font-light text-base z-10">
                   <p className="xl:w-3/4 pb-4">
                     Primii membri inscrisi primesc 20% discount pentru 10
                     sedinte.
@@ -116,8 +118,8 @@ export default function Home() {
           <div className="hidden xl:flex w-1/3 bg-squash-light border-l-8 border-squash-red"></div>
         </div>
       </div>
-      <div className="md:absolute  md:bottom-20 -skew-y-3 flex items-center md:text-6xl text-medium text-white w-full h-10 py-4 md:py-16  bg-squash-red px-8 mb-10 md:mb-0 z-0">
-        <Marquee>
+      <div className="md:absolute md:bottom-20 -skew-y-3 flex items-center md:text-6xl text-medium text-white w-full h-10 py-4 md:py-16  bg-squash-red px-8 mb-10 md:mb-0 z-0">
+        <Marquee className={"overflow-hidden"}>
           <h1 className="px-3 md:px-8">ASB SQUASH COURTS</h1>
           <h1 className="px-3 md:px-8">WORLD SQUASH FEDERATION</h1>
           <h1 className="px-3 md:px-8">TECNIFIBRE</h1>
